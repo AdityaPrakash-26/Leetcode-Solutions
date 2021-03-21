@@ -6,5 +6,5 @@ using namespace std;
 
 int main(){
     solve();
-    cout<<"Message\n";
+    cout<<"Messag\n";
 }
