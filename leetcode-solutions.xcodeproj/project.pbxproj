@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84BDF72726078AF300BD8545 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		84BDF72926078B6500BD8545 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		84FDC1D025F1EE1C00DB5D48 /* leetcode-solutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "leetcode-solutions"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FDC1DD25F1EF2D00DB5D48 /* !!ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "!!ReadMe.md"; sourceTree = "<group>"; };
 		84FDC1DE25F1EF4400DB5D48 /* foo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = foo.txt; sourceTree = "<group>"; };
@@ -42,12 +42,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84BDF72626078ADD00BD8545 /* Kashif */ = {
+		84BDF72826078B5800BD8545 /* Kashif */ = {
 			isa = PBXGroup;
 			children = (
-				84BDF72726078AF300BD8545 /* ReadMe.md */,
+				84BDF72926078B6500BD8545 /* ReadMe.md */,
 			);
-			name = Kashif;
+			path = Kashif;
 			sourceTree = "<group>";
 		};
 		84FDC1C725F1EE1C00DB5D48 = {
@@ -69,7 +69,7 @@
 		84FDC1D225F1EE1C00DB5D48 /* leetcode-solutions */ = {
 			isa = PBXGroup;
 			children = (
-				84BDF72626078ADD00BD8545 /* Kashif */,
+				84BDF72826078B5800BD8545 /* Kashif */,
 				84FDC1DB25F1EED500DB5D48 /* Ishan */,
 				84FDC1DA25F1EECC00DB5D48 /* Aditya */,
 			);
