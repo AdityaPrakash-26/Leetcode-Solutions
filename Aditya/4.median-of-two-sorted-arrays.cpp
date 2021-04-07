@@ -1,4 +1,16 @@
 /*
+Accepted
+2094/2094 cases passed (32 ms)
+Your runtime beats 50.53 % of cpp submissions
+Your memory usage beats 25.12 % of cpp submissions (89.7 MB)
+*/
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+
+/*
  * @lc app=leetcode id=4 lang=cpp
  *
  * [4] Median of Two Sorted Arrays

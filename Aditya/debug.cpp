@@ -27,7 +27,7 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
             nums3[k] = nums1[i];
         }
     } else {
-        for(;j<nums1.size(); j++,k++){
+        for(;j<nums2.size(); j++,k++){
             nums3[k] = nums2[j];
         }
     }
