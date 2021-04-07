@@ -1,4 +1,4 @@
-
+#include <iostream> //added to fix error notifs in VSCode
 
 /*
  * @lc app=leetcode id=2 lang=cpp
@@ -10,6 +10,8 @@
 
 //   Definition for singly-linked list.
 
+//uncommented to fix error notifs in VSCode
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -17,6 +19,8 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
  };
+
+ //uncommenting ends
  
 class Solution {
 public:
