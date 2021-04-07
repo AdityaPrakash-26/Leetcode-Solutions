@@ -6,7 +6,7 @@ public:
      and its index as its value (i mean value of the map)
      then we will iterate through the vector nums insert the key value pair 
      till we reach the sum of target!
-    
+        unordered_map
     */
     vector<int> twoSum(vector<int>& nums, int target) {
        int i=0, num=0, val;
