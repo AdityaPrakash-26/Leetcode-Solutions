@@ -38,5 +38,3 @@ public:
     }
 };
 // @lc code=end
-
-// comments
