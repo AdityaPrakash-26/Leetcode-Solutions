@@ -36,7 +36,7 @@ public:
         ListNode * head = l3;
         int carry = 0;
 
-          while(l1!=NULL && l2!=NULL){
+        while(l1!=NULL && l2!=NULL){
             int value = l1->val+l2->val + carry;
             carry = value>=10 ? 1: 0;
             value = carry==0 ? value : value-10;
