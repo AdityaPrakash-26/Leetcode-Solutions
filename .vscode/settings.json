@@ -7,6 +7,8 @@
         "vector": "cpp",
         "iosfwd": "cpp",
         "iterator": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "array": "cpp",
+        "unordered_map": "cpp"
     }
 }
