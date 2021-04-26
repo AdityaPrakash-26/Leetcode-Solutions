@@ -1,3 +1,11 @@
+
+/*
+Accepted
+1157/1157 cases passed (8 ms)
+Your runtime beats 86.7 % of cpp submissions
+Your memory usage beats 41.32 % of cpp submissions (10.6 MB)
+*/
+
 /*
  * @lc app=leetcode id=6 lang=cpp
  *
