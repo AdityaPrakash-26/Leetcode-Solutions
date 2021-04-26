@@ -15,9 +15,9 @@ public:
         while (i < n)
         {
             for (int j = 0; j < numRows && i < n; j++)
-                vs[j].push_back(s[i++]);
+                vs[j].push_back(s[i++]); //going down
             for (int j = numRows - 2; j >= 1 && i < n; j--)
-                vs[j].push_back(s[i++]);
+                vs[j].push_back(s[i++]); //going oblique
         }
         string zigzag;
         for (string v : vs)
