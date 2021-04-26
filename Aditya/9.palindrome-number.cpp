@@ -1,4 +1,11 @@
 /*
+Accepted
+11510/11510 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 23.8 % of cpp submissions (5.9 MB)
+*/
+
+/*
  * @lc app=leetcode id=9 lang=cpp
  *
  * [9] Palindrome Number
