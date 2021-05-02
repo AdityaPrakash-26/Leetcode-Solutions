@@ -4,6 +4,7 @@ Accepted
 Your runtime beats 54.99 % of cpp submissions
 Your memory usage beats 60.29 % of cpp submissions (6 MB)
 */
+
 /*
  * @lc app=leetcode id=12 lang=cpp
  *
