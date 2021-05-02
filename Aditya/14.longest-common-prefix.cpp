@@ -12,29 +12,35 @@ Your memory usage beats 86.74 % of cpp submissions (9.1 MB)
  */
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    string longestCommonPrefix(vector<string>& strs) {
+    string longestCommonPrefix(vector<string> &strs)
+    {
 
-        string res="";
-        if (strs.size() == 0) return res;
-        if (strs.size() == 1) return strs[0];
-        int j=0;
-        bool flag=false;
-        while (true) {
-            for (int i=1;i<strs.size();i++) {
-                if (strs[i-1][j] != strs[i][j]) {
-                    flag=true;
+        string res = "";
+        if (strs.size() == 0)
+            return res;
+        if (strs.size() == 1)
+            return strs[0];
+        int j = 0;
+        bool flag = false;
+        while (true){
+            for (int i = 1; i < strs.size(); i++){
+                if (strs[i - 1][j] != strs[i][j]){
+                    flag = true;
                     break;
-                }         
+                }
             }
-            if (flag) break;
+            if (flag)
+                break;
             j++;
         }
 
-        for (int i=0;i<j;i++) res +=strs[0][i];
+        for (int i = 0; i < j; i++){
+            res += strs[0][i];
+        }
         return res;
     }
 };
 // @lc code=end
-
