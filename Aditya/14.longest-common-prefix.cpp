@@ -16,19 +16,24 @@ class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
 
-        string prefix="";
-        if(strs.size()==0)  return prefix;
-        
-        /** check char by char, for each char, check all the string word **/
-        for(int k=0; k<strs[0].size(); k++){
-            int i=1;
-            for(; i<strs.size() && strs[i].size()>k; i++){
-                if(strs[i][k]!=strs[0][k])
-                    return prefix;
+        string res="";
+        if (strs.size() == 0) return res;
+        if (strs.size() == 1) return strs[0];
+        int j=0;
+        bool flag=false;
+        while (true) {
+            for (int i=1;i<strs.size();i++) {
+                if (strs[i-1][j] != strs[i][j]) {
+                    flag=true;
+                    break;
+                }         
             }
-            if(i==strs.size()) prefix+=strs[0][k];
+            if (flag) break;
+            j++;
         }
-        return prefix;
+
+        for (int i=0;i<j;i++) res +=strs[0][i];
+        return res;
     }
 };
 // @lc code=end
