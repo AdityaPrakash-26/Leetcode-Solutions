@@ -38,7 +38,7 @@ public:
             t2=t2->next;
         }
 
-        t2->next=t2->next->next;   // the one after the t2 need to be removed
+        t2->next=t2->next->next;
         return head;
     }
 };
