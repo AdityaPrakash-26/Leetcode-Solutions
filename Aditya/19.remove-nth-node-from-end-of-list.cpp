@@ -18,7 +18,28 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        
+        ListNode* ans;
+        ListNode* t1 = head;
+        ListNode* t2 = head;
+
+        for(int i = 0; i<n; i++){
+            t1 = t1->next; 
+        }
+
+        if(t1==NULL){   
+            ans = head->next;
+            return ans;     
+        }
+
+        t1=t1.next;
+    
+        while(t1!=null){
+            t1=t1->next;
+            t2=t2->next;
+        }
+
+        t2->next=t2->next->next;   // the one after the t2 need to be removed
+        return head;
     }
 };
 // @lc code=end
