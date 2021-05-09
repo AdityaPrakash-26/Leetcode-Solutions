@@ -1,4 +1,11 @@
 /*
+* Accepted
+* 91/91 cases passed (0 ms)
+* Your runtime beats 100 % of cpp submissions
+* Your memory usage beats 62.85 % of cpp submissions (6.3 MB)
+*/
+
+/*
  * @lc app=leetcode id=20 lang=cpp
  *
  * [20] Valid Parentheses
