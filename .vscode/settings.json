@@ -1,14 +1,15 @@
 {
-    "files.associations": {
-        "__locale": "cpp",
-        "__string": "cpp",
-        "string": "cpp",
-        "string_view": "cpp",
-        "vector": "cpp",
-        "iosfwd": "cpp",
-        "iterator": "cpp",
-        "ostream": "cpp",
-        "array": "cpp",
-        "unordered_map": "cpp"
-    }
+  "files.associations": {
+    "__locale": "cpp",
+    "__string": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "vector": "cpp",
+    "iosfwd": "cpp",
+    "iterator": "cpp",
+    "ostream": "cpp",
+    "array": "cpp",
+    "unordered_map": "cpp",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
