@@ -34,7 +34,7 @@ public:
         while(i<s.length() && isdigit(s[i]))
         {
             backup = ans;
-            if(sign==1 && ans > (INT_MAX-(s[i]-'0'))/10)
+            if(sign==1 && ans > (INT_MAX-(s[i]-'0'))/10)    //if this operation is performed, ans will become greater than INT_MAX, hence overflow
                 return INT_MAX;
             else if(sign==-1  && ans > (INT_MAX-(s[i]-'0'))/10)
                 return INT_MIN;
