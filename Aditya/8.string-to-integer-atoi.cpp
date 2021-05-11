@@ -13,6 +13,11 @@ public:
         int left = 0, right = n - 1;
         int sign = 1;
         double temp_res = 0, multiplier = 1;
+
+        // Move past all white spaces - if any 
+        while(left < n && s[left] == ' '){
+            left++;
+        }
     }
 };
 // @lc code=end
