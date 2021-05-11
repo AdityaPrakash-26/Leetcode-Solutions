@@ -1,3 +1,6 @@
+#define IS_NUM(ch) ((ch >= '0') && (ch <= '9'))
+#define ALLOWED(ch) (((ch >= '0') && (ch <= '9')) || (ch == '+') || (ch == '-'))
+
 /*
  * @lc app=leetcode id=8 lang=cpp
  *
@@ -18,6 +21,10 @@ public:
         while(left < n && s[left] == ' '){
             left++;
         }
+
+        // Check for any violation while traversing from left to right
+        if((left == n) || (ALLOWED(s[left]) == false))
+            return 0;
     }
 };
 // @lc code=end
