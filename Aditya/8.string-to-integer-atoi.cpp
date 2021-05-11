@@ -1,6 +1,3 @@
-#define IS_NUM(ch) ((ch >= '0') && (ch <= '9'))
-#define ALLOWED(ch) (((ch >= '0') && (ch <= '9')) || (ch == '+') || (ch == '-'))
-
 /*
  * @lc app=leetcode id=8 lang=cpp
  *
@@ -12,19 +9,20 @@ class Solution
 {
 public:
     int myAtoi(string s){
-        int n = s.size();
-        int left = 0, right = n - 1;
-        int sign = 1;
-        double temp_res = 0, multiplier = 1;
-
-        // Move past all white spaces - if any 
-        while(left < n && s[left] == ' '){
-left++;
+    long result = 0;
+    int indicator = 1;
+    for(int i = 0; i<str.size();)
+    {
+        i = str.find_first_not_of(' ');
+        if(str[i] == '-' || str[i] == '+')
+            indicator = (str[i++] == '-')? -1 : 1;
+        while('0'<= str[i] && str[i] <= '9') 
+        {
+            result = result*10 + (str[i++]-'0');
+            if(result*indicator >= INT_MAX) return INT_MAX;
+            if(result*indicator <= INT_MIN) return INT_MIN;                
         }
-
-        // Check for any violation while traversing from left to right
-        if((left == n) || (ALLOWED(s[left]) == false))
-            return 0;
+        return result*indicator;
     }
 };
 // @lc code=end
