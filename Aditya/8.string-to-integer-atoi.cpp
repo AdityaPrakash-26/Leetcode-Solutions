@@ -19,7 +19,7 @@ public:
 
         // Move past all white spaces - if any 
         while(left < n && s[left] == ' '){
-            left++;
+left++;
         }
 
         // Check for any violation while traversing from left to right
