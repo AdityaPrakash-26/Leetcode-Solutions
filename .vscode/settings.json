@@ -10,6 +10,7 @@
     "ostream": "cpp",
     "array": "cpp",
     "unordered_map": "cpp",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": "true"
   }
 }
