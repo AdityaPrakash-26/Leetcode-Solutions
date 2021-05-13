@@ -11,7 +11,7 @@ public:
        which returns all the unique elements from the vector 
     */
     int removeDuplicates(vector<int>& nums) {
-        if(nums.size() == 0){//Case when length == 0 return 0
+        if(nums.size() == 0){    //Case when length == 0 return 0
             return 0;
         }
         return unique(nums.begin(),nums.end()) - nums.begin();
