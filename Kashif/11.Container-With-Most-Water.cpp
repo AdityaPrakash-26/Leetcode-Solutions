@@ -24,7 +24,7 @@ public:
                 int width=j-i; 
                 int currArea=minHeight*width;    //area=height * width
                 maxArea=max(maxArea,currArea);
-                if(minHeight==height[i]) //if i arr[i] is smaller we increment the width
+                if(minHeight==height[i])    //if i arr[i] is smaller we increment the width
                  {
                     i++; 
                 }
