@@ -3,7 +3,7 @@
      Memory Usage: 5.8 MB, less than 72.03% of C++ online submissions for Reverse Integer. 
 */
 
-//Previous solution has runtime error 
+// Previous solution had runtime error 
 class Solution {
 public:
     int reverse(int x) {
