@@ -1,17 +1,17 @@
 /*
-    Accepted
-    1157/1157 cases passed (8 ms)
-    Your runtime beats 86.7 % of cpp submissions
-    Your memory usage beats 84.37 % of cpp submissions (8.2 MB)
-*/
-
-/*
  * @lc app=leetcode id=6 lang=cpp
  *
  * [6] ZigZag Conversion
  */
 
 
+
+/*
+    Accepted
+    1157/1157 cases passed (8 ms)
+    Your runtime beats 86.7 % of cpp submissions
+    Your memory usage beats 84.37 % of cpp submissions (8.2 MB)
+*/
 
 // @lc code=start
 #include <string>
