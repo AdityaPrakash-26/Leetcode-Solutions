@@ -27,7 +27,8 @@ public:
         for (int j = i; j < s.length(); j++) {
             int check = 1;
 
-            for (int k = 0; k < (j - i + 1) / 2; k++)
+            for (int k = 0; k < (j - i + 1) / 2; k++)   //iterating over half the array is wrong. Take a window and start iterating from either the middle
+                                                        //towards the end, or start from the end towards the middle.
                 if (s[i + k] != s[j - k])
                     check = 0;
  
