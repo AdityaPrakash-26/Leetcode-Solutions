@@ -16,12 +16,12 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-       /*
-          If number of Rows to show == 1
-          then the zig zag patterm would be just same
-          as the original string       
-       */   
-       if (numRows == 1) {
+        /*
+         * If number of Rows to show == 1
+         * then the zig zag patterm would be just same
+         * as the original string       
+        */   
+        if (numRows == 1) {
             return s;
         }
         const int jump = 2 * numRows - 2;
