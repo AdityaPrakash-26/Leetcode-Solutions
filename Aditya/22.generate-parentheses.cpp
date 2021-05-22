@@ -1,4 +1,11 @@
 /*
+Accepted
+8/8 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 70.86 % of cpp submissions (13.5 MB)
+*/
+
+/*
  * @lc app=leetcode id=22 lang=cpp
  *
  * [22] Generate Parentheses
