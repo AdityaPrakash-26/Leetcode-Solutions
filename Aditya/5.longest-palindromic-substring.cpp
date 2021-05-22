@@ -28,8 +28,8 @@ public:
         ans += s[0];
 
         for(int mid=0; mid<n; ++mid){
-            Palindrome(mid-1,mid,s,ans,l,n); 
-            Palindrome(mid-1,mid+1,s,ans,l,n);
+            Palindrome(mid-1,mid,s,ans,l,n);    //for even
+            Palindrome(mid-1,mid+1,s,ans,l,n);  //for odd
         }
         return ans;
     }
