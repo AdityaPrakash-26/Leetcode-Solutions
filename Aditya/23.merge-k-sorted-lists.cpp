@@ -1,4 +1,11 @@
 /*
+Accepted
+133/133 cases passed (16 ms)
+Your runtime beats 96.75 % of cpp submissions
+Your memory usage beats 45.63 % of cpp submissions (13.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=23 lang=cpp
  *
  * [23] Merge k Sorted Lists
@@ -21,7 +28,15 @@ public:
         if(lists.empty()){
             return nullptr;
         }
-        //todo: use the function
+        int len = lists.size();
+        while (len > 1) {
+            for (int i = 0; i < len / 2; ++i) {
+                lists[i] = mergeTwoLists(lists[i], lists[len - 1 - i]);
+            }
+            len = (len + 1) / 2;
+        }
+        
+        return lists.front();
     }
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
         if(l1 == nullptr){
