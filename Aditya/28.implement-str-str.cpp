@@ -20,7 +20,13 @@ public:
         char first = needle[0];
 
         for(int i = 0; i<h; i++){
-            
+            if(haystack[i] == first){
+                int j = 0;
+                while((haystack[i] == needle[j]) && i<h && j<n){
+                    i++;
+                    j++;
+                }
+            }
         }
     }
 };
