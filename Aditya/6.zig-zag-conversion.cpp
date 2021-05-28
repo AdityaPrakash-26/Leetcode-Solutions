@@ -21,14 +21,14 @@ public:
         if(numRows <= 1){
             return s;
         }
-        
+
         vector<string> vs(numRows, "");
         int n = s.length(), i = 0;
         while (i < n)
         {
             for (int j = 0; j < numRows && i < n; j++)
                 vs[j].push_back(s[i++]); //going down
-            for (int j = numRows - 2; j >= 1 && i < n; j--)
+            for (int j = numRows - 2; j >= 1 && i < n; j--)     //1 for bottom element and 1 for index
                 vs[j].push_back(s[i++]); //going oblique
         }
         string zigzag;
