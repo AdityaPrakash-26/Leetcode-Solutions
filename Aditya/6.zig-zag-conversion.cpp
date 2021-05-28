@@ -18,6 +18,10 @@ class Solution
 public:
     string convert(string s, int numRows)
     {
+        if(numRows <= 1){
+            return s;
+        }
+        
         vector<string> vs(numRows, "");
         int n = s.length(), i = 0;
         while (i < n)
