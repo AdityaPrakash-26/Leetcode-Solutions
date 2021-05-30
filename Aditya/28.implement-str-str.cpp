@@ -18,15 +18,34 @@ public:
         }
 
         char first = needle[0];
-
-        for(int i = 0; i<h; i++){
+        bool flag = false;
+        int i = 0;
+        int iCopy = 0;
+        for(i; i<h; i++){
             if(haystack[i] == first){
                 int j = 0;
+                iCopy = i;
                 while(haystack[i] == needle[j]){
+                    if(j==n-1){
+                        flag = true;
+                        break;
+                    }
+                    if(i==h-1){
+                        break;
+                    }
                     i++;
                     j++;
                 }
+                i = i-j;
             }
+            if(flag == true){
+                break;
+            }
+        }
+        if(flag == true){
+            return iCopy;
+        } else {
+            return -1;
         }
     }
 };
