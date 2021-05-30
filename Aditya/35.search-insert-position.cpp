@@ -1,4 +1,10 @@
 /*
+Accepted
+62/62 cases passed (8 ms)
+Your runtime beats 8.8 % of cpp submissions
+Your memory usage beats 50.07 % of cpp submissions (9.7 MB)
+*/
+/*
  * @lc app=leetcode id=35 lang=cpp
  *
  * [35] Search Insert Position
@@ -17,7 +23,7 @@ public:
                 return i;
             }
         }
-        
+
         return n;
         
     }
