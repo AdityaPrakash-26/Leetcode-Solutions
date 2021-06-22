@@ -18,7 +18,7 @@ public:
         if(n==0){
             return 0;
         }
-
+        
         int i = 0;
         for(int j = i+1; j<nums.size(); j++){
             if(nums[j]!=nums[i]){
