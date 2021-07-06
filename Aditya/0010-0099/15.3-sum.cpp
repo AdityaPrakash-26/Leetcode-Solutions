@@ -15,21 +15,6 @@ Your memory usage beats 62.03 % of cpp submissions (20.1 MB)
 class Solution {
 public:
 
-    set<vector<int>> convertToSet(vector<vector<int>> v){
-    // Declaring the  set
-    set<vector<int>> s;
-    // Traverse the Vector
-    for (vector<int> x : v) {
-  
-        // Insert each element
-        // into the Set
-        s.insert(x);
-    }
-  
-    // Return the resultant Set
-    return s;
-}
-
     vector<vector<int>> threeSum(vector<int>& nums) {
         if(nums.size() < 3) return {};
         vector<vector<int>> ret;
