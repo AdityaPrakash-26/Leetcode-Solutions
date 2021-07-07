@@ -28,8 +28,8 @@ public:
         if(!head || !head->next) return head;
 
         ListNode *temp = head->next;
-        head->next = swapPairs(temp->next); 
-        temp->next = head;
+        head->next = swapPairs(temp->next); //the head should be connected to the remaining linked list. 1 should be connected to 4 in example
+        temp->next = head;  //2 should be connected to 1.
 
         return temp;
     }
