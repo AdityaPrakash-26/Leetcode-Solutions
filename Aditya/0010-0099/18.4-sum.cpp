@@ -41,7 +41,7 @@ public:
                         k++;
                     }
 
-                    while (j + 1 < nums.size() && nums[j + 1] == nums[j]) 
+                    while (j + 1 < nums.size() && nums[j + 1] == nums[j])  //for ensuring we don't get any duplicates
                         j++;
                     while (i + 1 < nums.size() && nums[i + 1] == nums[i]) 
                         i++;
