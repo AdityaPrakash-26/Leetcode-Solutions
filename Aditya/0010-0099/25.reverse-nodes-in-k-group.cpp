@@ -1,4 +1,11 @@
 /*
+Accepted
+62/62 cases passed (16 ms)
+Your runtime beats 59.01 % of cpp submissions
+Your memory usage beats 66.85 % of cpp submissions (11.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=25 lang=cpp
  *
  * [25] Reverse Nodes in k-Group
