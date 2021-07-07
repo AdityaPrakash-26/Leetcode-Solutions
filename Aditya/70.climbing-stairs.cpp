@@ -1,4 +1,11 @@
 /*
+Accepted
+45/45 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 80.1 % of cpp submissions (5.9 MB)
+*/
+
+/*
  * @lc app=leetcode id=70 lang=cpp
  *
  * [70] Climbing Stairs
