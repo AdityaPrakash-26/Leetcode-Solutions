@@ -1,4 +1,11 @@
 /*
+Accepted
+55/55 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 90.46 % of cpp submissions (7.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=24 lang=cpp
  *
  * [24] Swap Nodes in Pairs
