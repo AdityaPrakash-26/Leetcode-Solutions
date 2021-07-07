@@ -31,6 +31,7 @@ public:
                 else{
                     ret.push_back({nums[i],nums[lo],nums[hi]});
                     lo++,hi--;
+                    //for ensuring we don't get any duplicates
                     while(hi>lo && nums[hi]==nums[hi+1]) hi--;
                     while(hi>lo && nums[lo]==nums[lo-1]) lo++;
                 }    
