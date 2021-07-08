@@ -1,4 +1,11 @@
 /*
+Accepted
+166/166 cases passed (12 ms)
+Your runtime beats 47.88 % of cpp submissions
+Your memory usage beats 28.05 % of cpp submissions (11.6 MB)
+*/
+
+/*
  * @lc app=leetcode id=83 lang=cpp
  *
  * [83] Remove Duplicates from Sorted List
