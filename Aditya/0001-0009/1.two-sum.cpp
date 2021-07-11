@@ -19,15 +19,15 @@ Your memory usage beats 79.76 % of cpp submissions (8.8 MB)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-    unordered_map<int, int> tmp;
+        unordered_map<int, int> tmp;
 
-    for (int i = 0; i < nums.size(); ++i) {
-        if (tmp.count(target - nums[i])) {
-            return {tmp[target - nums[i]], i};
+        for (int i = 0; i < nums.size(); ++i) {
+            if (tmp.count(target - nums[i])) {
+                return {tmp[target - nums[i]], i};
+            }
+            tmp[nums[i]] = i;
         }
-        tmp[nums[i]] = i;
+        return {nums.size(), nums.size()};
     }
-    return {nums.size(), nums.size()};
-}
 };
 // @lc code=end
