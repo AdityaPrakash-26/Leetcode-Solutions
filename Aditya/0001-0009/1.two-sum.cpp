@@ -19,15 +19,19 @@ Your memory usage beats 79.76 % of cpp submissions (8.8 MB)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> tmp;
-
-        for (int i = 0; i < nums.size(); ++i) {
-            if (tmp.count(target - nums[i])) {
-                return {tmp[target - nums[i]], i};
+        // Keys are the array values and values are the associated array indices
+        unordered_map<int, int> hash; // Use as a hash table, instead of creating one
+        vector<int> result;
+        for (int i = 0; i < nums.size(); i++)
+            if (hash.count(target - nums[i])) { // If the partner of this value to reach the target sum has been saved already
+            
+                result.push_back(hash[target - nums[i]]); // Get index of other value
+                result.push_back(i);
+                return result;
+            } else { // Pair has not yet been found, so save value to hash table
+                hash[nums[i]] = i;
             }
-            tmp[nums[i]] = i;
-        }
-        return {nums.size(), nums.size()};
+        return result;
     }
 };
 // @lc code=end
