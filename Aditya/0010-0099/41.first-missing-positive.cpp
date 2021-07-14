@@ -1,4 +1,11 @@
 /*
+Accepted
+171/171 cases passed (160 ms)
+Your runtime beats 29.98 % of cpp submissions
+Your memory usage beats 17.11 % of cpp submissions (83 MB)
+*/
+
+/*
  * @lc app=leetcode id=41 lang=cpp
  *
  * [41] First Missing Positive
