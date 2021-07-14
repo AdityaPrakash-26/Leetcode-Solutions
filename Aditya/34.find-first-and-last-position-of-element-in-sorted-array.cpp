@@ -1,4 +1,11 @@
 /*
+Accepted
+88/88 cases passed (8 ms)
+Your runtime beats 69.72 % of cpp submissions
+Your memory usage beats 16.31 % of cpp submissions (13.7 MB)
+*/
+
+/*
  * @lc app=leetcode id=34 lang=cpp
  *
  * [34] Find First and Last Position of Element in Sorted Array
