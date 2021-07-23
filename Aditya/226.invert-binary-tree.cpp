@@ -1,4 +1,11 @@
 /*
+ * Accepted
+ * 77/77 cases passed (0 ms)
+ * Your runtime beats 100 % of cpp submissions
+ * Your memory usage beats 97.1 % of cpp submissions (9.6 MB)
+ */
+
+/*
  * @lc app=leetcode id=226 lang=cpp
  *
  * [226] Invert Binary Tree
