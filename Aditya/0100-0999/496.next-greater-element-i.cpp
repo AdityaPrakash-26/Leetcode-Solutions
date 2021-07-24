@@ -1,4 +1,11 @@
 /*
+Accepted
+15/15 cases passed (4 ms)
+Your runtime beats 95.15 % of cpp submissions
+Your memory usage beats 56.77 % of cpp submissions (8.8 MB)
+*/
+
+/*
  * @lc app=leetcode id=496 lang=cpp
  *
  * [496] Next Greater Element I
