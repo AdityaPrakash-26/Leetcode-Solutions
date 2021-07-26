@@ -14,7 +14,9 @@ public:
         unordered_map<string, vector<string>> map;
         for(auto str : strs) {
             string key = str;
-            sort(key.begin(), key.end());
+            //same strings will have the same keys
+            //and hence will be grouped together
+            sort(key.begin(), key.end());   
             map[key].push_back(str);
         }
 
