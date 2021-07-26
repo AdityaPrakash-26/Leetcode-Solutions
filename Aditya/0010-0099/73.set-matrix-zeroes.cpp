@@ -18,11 +18,14 @@ public:
         for(int i = 0; i<matrix.size(); i++){
             for(int j = 0; j<matrix[0].size(); j++){
                 if(matrix[i][j] == 0){
-                    for(int k = 0; k<matrix.size(); k++){
+                    //change the row to be 0(currently set to INT_MIN, so that 
+                    //it does not affect other calculations when it is changed to 0)
+                    for(int k = 0; k<matrix.size(); k++){   
                         if(matrix[k][j] != 0){
-                            matrix[k][j] = INT_MIN+1;
+                            matrix[k][j] = INT_MIN+1;   //set to INT_MIN + 1 because of one weird test case :(
                         }
                     }
+                    //change column to be 0
                     for(int k = 0; k<matrix[0].size(); k++){
                         if(matrix[i][k] != 0){
                             matrix[i][k] = INT_MIN+1;
@@ -31,6 +34,7 @@ public:
                 }
             }
         }
+        //change INT_MINs to be 0
         for(int i = 0; i<matrix.size(); i++){
             for(int j = 0; j<matrix[0].size(); j++){
                 if(matrix[i][j] == INT_MIN+1){
