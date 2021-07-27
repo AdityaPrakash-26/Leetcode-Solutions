@@ -1,4 +1,11 @@
 /*
+Accepted
+70/70 cases passed (76 ms)
+Your runtime beats 69.31 % of cpp submissions
+Your memory usage beats 30.21 % of cpp submissions (31 MB)
+*/
+
+/*
  * @lc app=leetcode id=128 lang=cpp
  *
  * [128] Longest Consecutive Sequence
