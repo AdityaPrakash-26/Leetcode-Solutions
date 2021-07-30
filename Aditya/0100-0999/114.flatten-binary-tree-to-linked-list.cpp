@@ -1,4 +1,11 @@
 /*
+Accepted
+225/225 cases passed (4 ms)
+Your runtime beats 87.43 % of cpp submissions
+Your memory usage beats 35.96 % of cpp submissions (12.8 MB)
+*/
+
+/*
  * @lc app=leetcode id=114 lang=cpp
  *
  * [114] Flatten Binary Tree to Linked List
