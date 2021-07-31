@@ -37,7 +37,7 @@ public:
             return 0;
         }
         height(root);
-        return ans-1;
+        return ans-1;   //returning -1 because leetcode does not consider the starting node to be part of the path
     }
 };
 // @lc code=end
