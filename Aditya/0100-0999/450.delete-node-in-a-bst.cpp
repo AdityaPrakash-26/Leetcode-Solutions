@@ -39,16 +39,20 @@ public:
         if(root == nullptr){
             return root;
         } else if(root->val>key){
-            root->left=deleteNode(root->left,key);
+            // replace the left subtree with the tree obtained 
+            // after removing the node from the same
+            root->left = deleteNode(root->left,key);
         } else if(root->val<key){
-            root->right=deleteNode(root->right,key);
+            // replace the right subtree with the tree obtained 
+            // after removing the node from the same
+            root->right = deleteNode(root->right,key);
         } else {
-            if(root->right == nullptr){
-                return root->left;
-            }else if(root->left == nullptr){
+            if(root->right == nullptr){     //does not have right child
+                return root->left;  //make left child take place of root
+            }else if(root->left == nullptr){    
                 return root->right;
             }else{
-			    //replace the root value by find the minimum val from right side
+			    // replace the root value by find the minimum val from right side
                 root->val = findInorderSuccessor(root);
                 root->right = deleteNode(root->right, root->val);
             }
