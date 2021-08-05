@@ -17,7 +17,7 @@ Your memory usage beats 12.72 % of cpp submissions (71.3 MB)
 
 //   Definition for singly-linked list.
 
-//uncommented to fix error notifs in VSCode
+//uncommented to fix error squiggles in VSCode
 
 struct ListNode {
     int val;
@@ -25,10 +25,10 @@ struct ListNode {
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
+};
 
  //uncommenting ends
- 
+
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
@@ -36,7 +36,7 @@ public:
         ListNode * head = l3;
         int carry = 0;
 
-        while(l1!=NULL && l2!=NULL){
+        while(l1 && l2){
             int value = l1->val+l2->val + carry;
             carry = value>=10 ? 1: 0;
             value = carry==0 ? value : value-10;
@@ -46,9 +46,8 @@ public:
             
             l1=l1->next;l2=l2->next;
         }
-        
-        //When one of the list has finished
-        while(l1 != NULL){
+
+        while(l1){
             int value = l1->val+carry;
             carry = value>=10 ? 1: 0;
             value = carry==0 ? value : value-10;
@@ -58,8 +57,8 @@ public:
             head=head->next;
             l1=l1->next;
         }
-        
-        while(l2 != NULL){
+
+        while(l2){
             int value = l2->val + carry;
             carry = value>=10 ? 1: 0;
             value = carry==0 ? value : value-10;
