@@ -1,4 +1,11 @@
 /*
+Accepted
+211/211 cases passed (100 ms)
+Your runtime beats 96.27 % of cpp submissions
+Your memory usage beats 52.59 % of cpp submissions (93.3 MB)
+*/
+
+/*
  * @lc app=leetcode id=121 lang=cpp
  *
  * [121] Best Time to Buy and Sell Stock
