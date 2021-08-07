@@ -16,7 +16,7 @@ class Solution {
 public:
 
     vector<vector<int>> threeSum(vector<int>& nums) {
-        if(nums.size() < 3) return {};
+        if(nums.size() < 3) return {};  //edge case
 
         vector<vector<int>> ret;
 
@@ -27,7 +27,9 @@ public:
                 continue;
             }
 
-            int tar = 0 - nums[i],hi=nums.size()-1,lo=i+1;
+            int tar = 0 - nums[i];
+            int hi=nums.size()-1;
+            int lo=i+1;
 
             while(hi>lo){
                 int summ = nums[hi]+nums[lo];
