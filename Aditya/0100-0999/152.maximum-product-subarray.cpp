@@ -1,4 +1,11 @@
 /*
+Accepted
+187/187 cases passed (8 ms)
+Your runtime beats 39.03 % of cpp submissions
+Your memory usage beats 88.97 % of cpp submissions (11.6 MB)
+*/
+
+/*
  * @lc app=leetcode id=152 lang=cpp
  *
  * [152] Maximum Product Subarray
