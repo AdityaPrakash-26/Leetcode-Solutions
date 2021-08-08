@@ -1,4 +1,11 @@
 /*
+Accepted
+231/231 cases passed (4 ms)
+Your runtime beats 94.4 % of cpp submissions
+Your memory usage beats 49.92 % of cpp submissions (11.8 MB)
+*/
+
+/*
  * @lc app=leetcode id=61 lang=cpp
  *
  * [61] Rotate List
