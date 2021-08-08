@@ -1,8 +1,8 @@
 /*
 Accepted
-187/187 cases passed (8 ms)
-Your runtime beats 39.03 % of cpp submissions
-Your memory usage beats 88.97 % of cpp submissions (11.6 MB)
+187/187 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 88.99 % of cpp submissions (11.7 MB)
 */
 
 /*
@@ -15,28 +15,25 @@ Your memory usage beats 88.97 % of cpp submissions (11.6 MB)
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        // empty array case
-		if (nums.size() == 0)
-			return 0;
-			
-	    // maxSub and minSub will hold the products till nums[i]
-        int maxSub = nums[0];   
-        int minSub = nums[0];
-        int maxProductSub = nums[0];
-        
-        for (size_t i = 1; i < nums.size(); i++){
-            // element is negative so we swap max and min
-            // because when multiplying negative with a negative, number becomes positive so minimum negative number will become the maximum number
-            if (nums[i] < 0)
-                swap(minSub, maxSub);
-            // update all the sub values
-			maxSub = max(maxSub * nums[i], nums[i]); 
-            minSub = min(minSub * nums[i], nums[i]); 
-            // choose max product to be the max between the maxProduct till now and maxSub
-			maxProductSub = max(maxProductSub, maxSub); 
+        if(nums.size() == 0){
+            return 0;
         }
-		
-        return maxProductSub;
+        
+        int maxSub = nums[0];
+        int minSub = nums[0];
+        int maxProd = nums[0];
+
+        for(int i = 1; i<nums.size(); i++){
+            if(nums[i]<0){
+                swap(maxSub, minSub);
+            }
+
+            maxSub = max(maxSub * nums[i], nums[i]);
+            minSub = min(minSub * nums[i], nums[i]);
+
+            maxProd = max(maxSub, maxProd);
+        }
+        return maxProd;
     }
 };
 // @lc code=end
