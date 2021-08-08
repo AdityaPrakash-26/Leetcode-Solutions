@@ -29,7 +29,7 @@ public:
             hare = nums[hare];
             tortoise = nums[tortoise];
         }
-        return hare;
+        return hare;    //why are we returning just `hare` instead of `nums[hare]`?
     }
 };
 // @lc code=end
