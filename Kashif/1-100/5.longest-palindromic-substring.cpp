@@ -3,7 +3,6 @@
 
 class Solution {
 public:
-
 //   Function to get then substring through characters vector and then convert it into string again (Confusing right?🙄)
 //   Please correct it and before that let me know the exact way or Algorithm
 // Regards,
@@ -35,6 +34,5 @@ public:
     }
     string str = strConv(s, start, start + maxLen - 1);
     return str;
-}
-    
+	}
 };
