@@ -2,7 +2,7 @@
 Accepted
 93/93 cases passed (12 ms)
 Your runtime beats 95.81 % of cpp submissions
-Your memory usage beats 15.55 % of cpp submissions (24.4 MB)
+Your memory usage beats 85.28 % of cpp submissions (24.1 MB)
 */
 
 /*
@@ -25,22 +25,24 @@ Your memory usage beats 15.55 % of cpp submissions (24.4 MB)
  */
 class Solution {
 public:
-    void inOrderTraversal(TreeNode* root, vector<int> &res) {
-        if(root==nullptr){
+    void inOrderTraversal(TreeNode* root, int &k, int &res) {
+        if(root == nullptr){
             return;
         }
-        inOrderTraversal(root->left, res);
-        res.push_back(root->val);
-        inOrderTraversal(root->right, res);
-        return;
+
+        inOrderTraversal(root->left, k, res);
+        k--;    //already checked a node
+        if(k==0){
+            res = root->val;
+            return;
+        }
+        inOrderTraversal(root->right, k, res);
     }
 
     int kthSmallest(TreeNode* root, int k) {
-        vector<int> inorder;
-        inOrderTraversal(root, inorder);
-
-        return inorder[k-1];
-
+        int res;
+        inOrderTraversal(root, k, res);
+        return res;
     }
 };
 // @lc code=end
