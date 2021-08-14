@@ -15,10 +15,10 @@ Your memory usage beats 40.5 % of cpp submissions (7.8 MB)
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        if(nums.size() == 1){
+        if(nums.size() == 1) {
             return nums[0];
         }
-        if(nums.size() == 2){
+        if(nums.size() == 2) {
             return max(nums[0], nums[1]);
         }
 
