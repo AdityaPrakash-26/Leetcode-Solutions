@@ -15,15 +15,12 @@ Your memory usage beats 83.64 % of cpp submissions (7.1 MB)
 class Solution {
 public:
     int change(int amount, vector<int>& coins) {
-        // ways[i] += ways[i-denom]
-
         vector<int> ways(amount+1);
+        ways[0] = 1;
         
         for(int i = 1; i<=amount; i++){
             ways[i] = 0;
         }
-
-        ways[0] = 1;
 
         for(int i = 0; i<coins.size(); i++){
             int denomination = coins[i];
