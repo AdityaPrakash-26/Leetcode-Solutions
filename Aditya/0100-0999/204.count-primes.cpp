@@ -23,9 +23,9 @@ public:
         primes[0] = primes[1] = false;
 
         for(int i = 2; i*i <= n; i++){
-            if(primes[i]){
+            if(primes[i]){  //if the number is prime
                 for(int j = 2; i*j <= n; j++){
-                    primes[i*j] = false;
+                    primes[i*j] = false;    //mark all its multiples as non-primes
                 }
             }
         }
@@ -34,7 +34,7 @@ public:
 
         for(int i = 2; i < n; i++){
             if(primes[i]) {
-                ans++;
+                ans++;  //count number of primes
             }
         }
         return ans;   
