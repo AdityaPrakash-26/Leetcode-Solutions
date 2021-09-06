@@ -1,4 +1,11 @@
 /*
+Accepted
+50/50 cases passed (56 ms)
+Your runtime beats 92.93 % of cpp submissions
+Your memory usage beats 72.85 % of cpp submissions (27.5 MB)
+*/
+
+/*
  * @lc app=leetcode id=542 lang=cpp
  *
  * [542] 01 Matrix
