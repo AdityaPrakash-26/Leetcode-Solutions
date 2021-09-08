@@ -32,7 +32,7 @@ public:
         backtrack(s, i + 1, ans);
         // path2: reset back(do NOT go to this path if c is digit)
         if (isalpha(c)) {
-            s[i] = c;
+            s[i] = c;   // revert the case toggle and backtrack again
             backtrack(s, i + 1, ans);
         }
     }
