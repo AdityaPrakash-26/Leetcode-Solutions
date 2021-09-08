@@ -19,9 +19,9 @@ public:
             res.push_back(nums);
         } else {
             for(int i = leftIdx; i<=rightIdx; i++){
-                swap(nums[leftIdx], nums[i]);    // swap and call it again
+                swap(nums[i], nums[leftIdx]);    // swap and call it again
                 backtrack(res, nums, leftIdx + 1, rightIdx);
-                swap(nums[leftIdx], nums[i]);    // revert the change (backtrack)
+                swap(nums[i], nums[leftIdx]);    // revert the change (backtrack)
             }
         }
     }
