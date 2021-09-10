@@ -3,6 +3,9 @@ Accepted
 133/133 cases passed (4 ms)
 Your runtime beats 74.16 % of cpp submissions
 Your memory usage beats 95.75 % of cpp submissions (9.3 MB)
+
+// TC: O(M * log N)
+// SC: O(1)
 */
 
 /*
