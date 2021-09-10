@@ -2,7 +2,7 @@
 Accepted
 39/39 cases passed (0 ms)
 Your runtime beats 100 % of cpp submissions
-Your memory usage beats 48.39 % of cpp submissions (5.9 MB)
+Your memory usage beats 82.42 % of cpp submissions (5.8 MB)
 */
 
 /*
@@ -23,7 +23,7 @@ public:
             return 1;
         }
 
-        int tribNums[38];
+        int tribNums[38] = {0};   //max number of elements is 37
 
         tribNums[0] = 0;
         tribNums[1] = tribNums[2] = 1;
