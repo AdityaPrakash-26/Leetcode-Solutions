@@ -2,7 +2,7 @@
 Accepted
 45/45 cases passed (0 ms)
 Your runtime beats 100 % of cpp submissions
-Your memory usage beats 80.1 % of cpp submissions (5.9 MB)
+Your memory usage beats 82.43 % of cpp submissions (5.9 MB)
 */
 
 /*
@@ -14,15 +14,19 @@ Your memory usage beats 80.1 % of cpp submissions (5.9 MB)
 // @lc code=start
 class Solution {
 public:
-
-    int t[46]={0};
-
     int climbStairs(int n) {
-        if(n==1) {t[n]=1; return 1;}
-        if(n==2) {t[n]=2; return 2;}
-        else if(t[n]!=0) return t[n];
-        t[n] = climbStairs(n-1)+climbStairs(n-2);
-        return t[n];
+        if(n <= 3){
+            return n;
+        }
+        int dpArr[46] = {0};
+        dpArr[1] = 1;
+        dpArr[2] = 2;
+        dpArr[3] = 3;
+
+        for(int i = 4; i<=45; i++){
+            dpArr[i] = dpArr[i-1] + dpArr[i-2];
+        }
+        return dpArr[n];
     }
 };
 // @lc code=end
