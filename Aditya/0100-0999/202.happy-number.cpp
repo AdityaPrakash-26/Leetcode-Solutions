@@ -30,11 +30,10 @@ public:
 
         do{
             slow = digitSquareSum(slow);
-            fast = digitSquareSum(fast);
-            fast = digitSquareSum(fast);
-        } while (slow != fast);
+            fast = digitSquareSum(digitSquareSum(fast));
+        } while (fast != 1 && slow != fast);
 
-        if(slow == 1){
+        if(fast == 1){
             return true;
         } else {
             return false;
