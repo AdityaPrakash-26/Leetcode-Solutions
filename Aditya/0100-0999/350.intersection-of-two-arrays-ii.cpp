@@ -14,7 +14,27 @@ Your memory usage beats 73.81 % of cpp submissions (10.1 MB)
 // @lc code=start
 class Solution {
 public:
+    // HASHMAP TC: O(M + N) SC: O(N) (or min of O(M), O(N)) with some
+    // optimizations
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        unordered_map <int, int> hash;
+        vector <int> intsec;
+        
+        for (int i: nums1) {
+            hash[i]++;
+        }
+        
+        for (auto item: nums2) {
+            if (--hash[item] >= 0) {
+                intsec.push_back(item);
+            }
+        }
+        
+        return intsec;
+    }
+
+    //SORTING TC: O(N log N + M log M); SC: O(1)
+    vector<int> intersectSort(vector<int>& nums1, vector<int>& nums2) {
         vector<int> res;
         
         sort(nums1.begin(), nums1.end());
