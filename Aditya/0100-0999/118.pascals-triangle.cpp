@@ -1,4 +1,11 @@
 /*
+Accepted
+14/14 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 33.97 % of cpp submissions (6.5 MB)
+*/
+
+/*
  * @lc app=leetcode id=118 lang=cpp
  *
  * [118] Pascal's Triangle
