@@ -31,7 +31,11 @@ public:
 
         }
         if(sum == minTotal) return maxTotal;
-        return max(sum - minTotal, maxTotal);
+        
+        // The reason is, that to find a maximum subarray in a circular array
+        // where it splits into to parts, we can find the minimum subarray and
+        // subtract it from the total sum and it will give us the same solution.
+        return max(sum - minTotal, maxTotal);   
     }
 };
 // @lc code=end
