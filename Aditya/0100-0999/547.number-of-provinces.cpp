@@ -28,9 +28,9 @@ public:
 		int n = M[0].size();
 		for(int i = 0; i < m; i++){
 			for(int j = 0; j < n; j++){
-				if(M[i][j] == 1){
+				if(M[i][j] == 1){	// i is connected to j
 					provinces++;
-					dfs(M,i);
+					dfs(M,i);	// check all provinces connected to i
 				}
 			}
 		}
