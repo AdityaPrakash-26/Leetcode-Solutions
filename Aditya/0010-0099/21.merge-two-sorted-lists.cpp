@@ -25,26 +25,33 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        ListNode n(INT_MIN);
-        ListNode* p = &n;
-
+        ListNode* dummy = new ListNode(0);
+        ListNode* temp = dummy;
+        
         while(l1 && l2){
             if(l1->val < l2->val){
-                p->next = l1;
+                temp->next = new ListNode(l1->val);
                 l1=l1->next;
+                temp = temp->next;
             } else {
-                p->next = l2;
+                temp->next = new ListNode(l2->val);
                 l2=l2->next;
+                temp = temp->next;
             }
-            p = p->next;
         }
-        if(l1){
-            p->next =l1;
+        
+        while(l1){
+            temp->next = new ListNode(l1->val);
+            l1=l1->next;
+            temp = temp->next;
         }
-        if(l2){
-            p->next = l2;
+        
+        while(l2){
+            temp->next = new ListNode(l2->val);
+            l2=l2->next;
+            temp = temp->next;
         }
-        return n.next;
+        return dummy->next;
     }
 };
 // @lc code=end
