@@ -28,7 +28,8 @@ public:
         if(head == nullptr) return head;
 
         while(head != nullptr && head->val == val){
-            head = head->next;  // move head to first occurrence of value
+            head = head->next;  // move forward until head's value is not val
+                                // i.e. remove the first few occurrences of val
         }
 
         ListNode* curr = head;
