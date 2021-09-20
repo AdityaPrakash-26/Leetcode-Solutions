@@ -1,4 +1,11 @@
 /*
+Accepted
+21/21 cases passed (6 ms)
+Your runtime beats 5.14 % of cpp submissions
+Your memory usage beats 48.04 % of cpp submissions (7.1 MB)
+*/
+
+/*
  * @lc app=leetcode id=232 lang=cpp
  *
  * [232] Implement Queue using Stacks
