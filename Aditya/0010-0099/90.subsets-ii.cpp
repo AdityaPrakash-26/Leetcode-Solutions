@@ -27,7 +27,7 @@ public:
             subs.push_back(currentSet);
         }
         for(int i = startingIdx; i < nums.size(); i++){
-            if(i == startingIdx || nums[i] != nums[i-1]){   // same condition in 47. permutations ii
+            if(i == startingIdx || nums[i] != nums[i-1]){
                 currentSet.push_back(nums[i]);
                 backtrack(nums, i+1, currentSet, subs);
                 currentSet.pop_back();  //backtrack
