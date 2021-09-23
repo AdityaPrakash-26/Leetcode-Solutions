@@ -1,4 +1,11 @@
 /*
+Accepted
+422/422 cases passed (32 ms)
+Your runtime beats 89.9 % of cpp submissions
+Your memory usage beats 70.49 % of cpp submissions (36.8 MB)
+*/
+
+/*
  * @lc app=leetcode id=653 lang=cpp
  *
  * [653] Two Sum IV - Input is a BST
