@@ -1,4 +1,11 @@
 /*
+Accepted
+62/62 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 37.38 % of cpp submissions (6.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=62 lang=cpp
  *
  * [62] Unique Paths
