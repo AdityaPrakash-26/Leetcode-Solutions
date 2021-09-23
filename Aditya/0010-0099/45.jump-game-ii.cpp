@@ -1,4 +1,11 @@
 /*
+Accepted
+106/106 cases passed (12 ms)
+Your runtime beats 90.04 % of cpp submissions
+Your memory usage beats 72.28 % of cpp submissions (16.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=45 lang=cpp
  *
  * [45] Jump Game II
