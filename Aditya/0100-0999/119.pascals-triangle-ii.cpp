@@ -15,14 +15,14 @@ Your memory usage beats 80.78 % of cpp submissions (6.4 MB)
 class Solution {
 public:
     vector<int> getRow(int rowIndex) {
-        vector<int> v(rowIndex+1);
-        long temp = 1;
-        v[0] = v[rowIndex] = 1;    // first and last element of the rowIndex-th row
-        for(int i = 1, up = rowIndex, down = 1; i < rowIndex; i++, up--, down++){
-            temp = temp*up / down;
-            v[i] = temp;
+        vector<int> row(rowIndex+1, 0);
+        row[0] = 1;
+        for(int i=1; i<rowIndex+1; i++){
+            for(int j=i; j>=1; j--){
+                row[j] += row[j-1];
+            }
         }
-        return v;
+        return row;
     }
 };
 // @lc code=end
