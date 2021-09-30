@@ -18,7 +18,7 @@ public:
         int len = nums.size();
         int i = 1;
         int ans = 1;
-        while (i < len && nums[i] == nums[i-1]) {
+        while (i < len && nums[i] == nums[i-1]) {   // calculate direction change
             i++;
         }
         if (i == len) {
@@ -28,8 +28,10 @@ public:
         bool up = nums[i-1] > nums[i];
 
         for (; i < len; i++){
+            //calculate inflection points
             if ((up && nums[i] < nums[i-1]) || (!up && nums[i] > nums[i-1])){
-                up = !up, ans++;
+                up = !up;
+                ans++;
             }
         }
         return ans;
