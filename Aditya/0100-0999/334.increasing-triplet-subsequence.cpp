@@ -11,11 +11,13 @@ public:
         int secondSmallest = INT_MAX;
         int smallest = INT_MAX;
         for (auto n: nums) {
-            if (n > secondSmallest) return true;
-            else if (n > smallest) {
+            if (n > secondSmallest) {
+                return true;
+            } else if (n > smallest) {
                 secondSmallest = n;
+            } else if (n < smallest) { 
+                smallest = n;
             }
-            else if (n < smallest) smallest = n;
         }
         return false;
     }
