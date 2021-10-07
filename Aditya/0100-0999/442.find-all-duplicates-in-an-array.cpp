@@ -21,7 +21,7 @@ public:
         
         vector<int>ans;
         
-        for(int i = 0; i< nums.size(); i++){
+        for(int i = 0; i < nums.size(); i++){
 
             if(nums[abs(nums[i]) - 1] < 0){
                 ans.push_back(abs(nums[i]));
@@ -29,6 +29,23 @@ public:
 
             nums[abs(nums[i]) - 1] = -nums[abs(nums[i]) - 1];
         }
+        return ans;
+    }
+
+    vector<int> findDuplicatesBrute(vector<int>& nums) {
+        if(nums.empty()){
+            return {};
+        }
+
+        vector<int> ans;
+        for(int i = 0; i < nums.size()-1; i++){
+            for(int j = i+1; j<nums.size(); j++){
+                if(nums[i] == nums[j]){
+                    ans.push_back(nums[i]);
+                }
+            }
+        }
+
         return ans;
     }
 };
