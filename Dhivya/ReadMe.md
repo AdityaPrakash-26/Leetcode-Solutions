@@ -1,6 +1,6 @@
-Dhivya S
-Leet Code username: poeticspacedust
+## Dhivya S
+Leet Code username: poeticspacedust </br>
 [LeetCode Profile](https://leetcode.com/poeticspacedust/)
 
-##Problems solved :
+## Problems solved :
   69 --> October 2021
