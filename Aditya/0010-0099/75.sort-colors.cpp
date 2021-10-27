@@ -15,37 +15,19 @@ Your memory usage beats 90.91 % of cpp submissions (8.2 MB)
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int zeroCount = 0;
-        int oneCount = 0;
-        int twoCount = 0;
+        int zeroPos = 0;
+        int twoPos = nums.size() - 1;
         
-        for(int i = 0; i<nums.size(); i++){
+        for(int i = 0; i <= twoPos; i++){
             if(nums[i] == 0){
-                zeroCount++;
-            } else if (nums[i] == 1){
-                oneCount++;
-            } else {
-                twoCount++;
+                swap(nums[i], nums[zeroPos++]);
+            } else if(nums[i] == 2){
+                swap(nums[i--], nums[twoPos--]);    // the previous i+1 now became i, so it is
+                                                    // not checked as i will get
+                                                    // incremented in the next
+                                                    // interation. Hence,
+                                                    // decrement i.
             }
-        }
-        
-        int i = 0;
-        while(zeroCount>0){
-            nums[i] = 0;
-            i++;
-            zeroCount--;
-        }
-        
-        while(oneCount>0){
-            nums[i] = 1;
-            i++;
-            oneCount--;
-        }
-        
-        while(twoCount>0){
-            nums[i] = 2;
-            i++;
-            twoCount--;
         }
     }
 };
