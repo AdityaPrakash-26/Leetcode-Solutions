@@ -39,34 +39,33 @@ public:
                     // here we collect all positions of '2's in our queue 
                     // so that our search can be initialised fron them
                     
+                } else if(grid[i][j]==1) {
+                    ones++; // here we count the number of '1's in the grid
                 }
-                else if(grid[i][j]==1)ones++; // here we count the number of '1's in the grid
             }
         }
         
         // Observe that, in this loop we have visited each cell, so time complexity has reached O(n*m) .  
         
-        
-        // ******************* Actual Solution Starts Here, Have Fun :)  ************* .
-        
         // if there are no fresh oranges (ones) present, time required is zero
-        if(ones==0)return 0; 
-        
+        if(ones==0){
+            return 0; 
+        } else if(twos==0) {
         // Now as the control has passed the above conditions, it means it has some fresh oranes. 
         // Hence, If there are no rotten oranges, fresh oranges will not rot and we will have to return (-1) . 
-        
-        else if(twos==0)return -1;
+            return -1;
+        }
         
         // Now we will have to do Breadth-First-Search to find the minimum time
         
-        int cnt1=twos,cnt2=0;
+        int cnt1 = twos;
+        int cnt2=0;
         // cnt1 stores the number of unvisited nodes or oranges which are 
         // going to affect its neighbours at the current moment
         
         // cnt2 is going to store number of childs of the oranges in the current level
-        // Don't worry if you didn't get that line, I got you covered below ;) .
         
-        // Observe that, The first level is already rotten, 
+        // Observe that, the first orange is already rotten, 
         // still we are counting it and hence at the end we return (ans-1) instead of ans . **
         
         while(!q.empty()){
@@ -80,40 +79,33 @@ public:
             // But for that to work, the position should exist , 
             // i.e.  it should not cross the bounds of the grid
             
-            if(y>0){
-                if(grid[y-1][x]==1){
-                    cnt2++;
-                    grid[y-1][x]=2;
-                    ones--; 
-                    // one became two 
-                    // and number of childs i.e. cnt2 increased by one
-                    // and lets add it to the queue to check if it has any children later
-                    q.push(make_pair(y-1,x));
-                }
+            if(y > 0 && grid[y-1][x]==1){
+                cnt2++;
+                grid[y-1][x]=2;
+                ones--; 
+                // add it to the queue to check if it has any children later
+                q.push(make_pair(y-1, x));
             }
-            if(y<n-1){
-                if(grid[y+1][x]==1){
-                    cnt2++;
-                    grid[y+1][x]=2;
-                    ones--;
-                    q.push(make_pair(y+1,x));
-                }
+
+            if(y<n-1 && grid[y+1][x]==1){
+                cnt2++;
+                grid[y+1][x]=2;
+                ones--;
+                q.push(make_pair(y+1, x));
             }
-            if(x>0){
-                if(grid[y][x-1]==1){
-                    cnt2++;
-                    grid[y][x-1]=2;
-                    ones--;
-                    q.push(make_pair(y,x-1));
-                }
+
+            if(x>0 && grid[y][x-1]==1){
+                cnt2++;
+                grid[y][x-1]=2;
+                ones--;
+                q.push(make_pair(y, x-1));
             }
-            if(x<m-1){
-                if(grid[y][x+1]==1){
-                    cnt2++;
-                    ones--;
-                    grid[y][x+1]=2;
-                    q.push(make_pair(y,x+1));
-                }
+
+            if(x<m-1 && grid[y][x+1]==1){
+                cnt2++;
+                ones--;
+                grid[y][x+1]=2;
+                q.push(make_pair(y, x+1));
             }
             if(cnt1==0){
                 // cnt1 is zero means we have completed traversing the current level of the graph
