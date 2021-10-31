@@ -1,4 +1,11 @@
 /*
+Accepted
+26/26 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 20.82 % of cpp submissions (7.4 MB)
+*/
+
+/*
  * @lc app=leetcode id=430 lang=cpp
  *
  * [430] Flatten a Multilevel Doubly Linked List
