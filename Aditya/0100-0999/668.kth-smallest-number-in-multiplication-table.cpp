@@ -1,4 +1,11 @@
 /*
+Accepted
+70/70 cases passed (12 ms)
+Your runtime beats 95.06 % of cpp submissions
+Your memory usage beats 22.47 % of cpp submissions (6 MB)
+*/
+
+/*
  * @lc app=leetcode id=668 lang=cpp
  *
  * [668] Kth Smallest Number in Multiplication Table
