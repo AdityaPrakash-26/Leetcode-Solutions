@@ -15,6 +15,13 @@ Your memory usage beats 95.45 % of cpp submissions (5.8 MB)
 class Solution {
 public:
     int hammingDistance(int x, int y) {
+        
+        // The basic idea here is to discuss the usage of xor operator (^) ,and
+        // operator(&) and right shift operator(>>).When we take xor of two
+        // numbers the bits with same numbers become zero and with different
+        // numbers become 1. Then we can right shift all the 1's and use & to
+        // find the number of ones .
+
         int z=x^y;int count=0;
         while(z){
             if(z&1)count++;
