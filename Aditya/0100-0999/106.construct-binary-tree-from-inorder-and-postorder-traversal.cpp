@@ -36,7 +36,8 @@ public:
         
         for(int i = inSt; i < inorder.size(); i++) {
             if(root->val == inorder[i]) {
-                pivot = i; break;
+                pivot = i; 
+                break;
             }
         }
 
