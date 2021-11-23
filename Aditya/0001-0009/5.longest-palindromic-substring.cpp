@@ -34,7 +34,7 @@ public:
             pair<int, int> odd = getLongestPalindromeFrom(s, i-1, i+1);
             pair<int, int> even = getLongestPalindromeFrom(s, i-1, i);
 
-            int lengthOfOdd = odd.second - odd.first + 1;   //+ 1 is done for index
+            int lengthOfOdd = odd.second - odd.first + 1;   //+ 1 is including the last index as well
             int lengthOfEven = even.second - even.first + 1;
 
             if(lengthOfOdd > lengthOfEven && lengthOfOdd > currentLongestLength){

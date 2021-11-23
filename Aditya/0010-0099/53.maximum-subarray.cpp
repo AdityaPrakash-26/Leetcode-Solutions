@@ -1,4 +1,11 @@
 /*
+Accepted
+203/203 cases passed (12 ms)
+Your runtime beats 17.67 % of cpp submissions
+Your memory usage beats 11.65 % of cpp submissions (13.2 MB)
+*/
+
+/*
  * @lc app=leetcode id=53 lang=cpp
  *
  * [53] Maximum Subarray
