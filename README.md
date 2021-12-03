@@ -3,9 +3,9 @@
 ![Update](https://img.shields.io/badge/update-daily-green.svg)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=adityaprakash26.leetcode.solutions)
 
-This is a repository for my friends and I for peer-coding starting April 7th. Our aim is to solve a thousand questions on Leetcode, within 6-8 months.
+This is a repository for my friends and I for peer-coding starting April 1th. Our aim is to solve a 300+ questions on Leetcode, by the end of this year.
 
-We wish to improve our competitve coding skills, and for this, we have decided to use github to review each other's code. If you think the code for any problem can be improved, please open an issue and let us know!
+We wish to improve our problem solving, and enhance our understanding of various data structures and algorithms. For this, we have decided to use github to review each other's code. If you think the code for any problem can be improved, please open an issue and let us know!
 
 # How to contribute?
 
