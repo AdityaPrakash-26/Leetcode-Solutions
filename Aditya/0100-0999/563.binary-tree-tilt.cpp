@@ -1,7 +1,7 @@
 /*
 Accepted
-77/77 cases passed (34 ms)
-Your runtime beats 10.31 % of cpp submissions
+77/77 cases passed (22 ms)
+Your runtime beats 32.66 % of cpp submissions
 Your memory usage beats 74.03 % of cpp submissions (23.7 MB)
 */
 
