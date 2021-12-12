@@ -1,4 +1,11 @@
 /*
+Accepted
+117/117 cases passed (202 ms)
+Your runtime beats 44.03 % of cpp submissions
+Your memory usage beats 85.04 % of cpp submissions (9.3 MB)
+*/
+
+/*
  * @lc app=leetcode id=416 lang=cpp
  *
  * [416] Partition Equal Subset Sum
