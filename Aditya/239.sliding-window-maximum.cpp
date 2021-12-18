@@ -1,4 +1,11 @@
 /*
+Accepted
+61/61 cases passed (454 ms)
+Your runtime beats 23.75 % of cpp submissions
+Your memory usage beats 94.27 % of cpp submissions (131.7 MB)
+*/
+
+/*
  * @lc app=leetcode id=239 lang=cpp
  *
  * [239] Sliding Window Maximum
