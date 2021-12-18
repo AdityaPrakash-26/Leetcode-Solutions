@@ -1,4 +1,11 @@
 /*
+Accepted
+84/84 cases passed (3 ms)
+Your runtime beats 53.09 % of cpp submissions
+Your memory usage beats 5.67 % of cpp submissions (8.3 MB)
+*/
+
+/*
  * @lc app=leetcode id=902 lang=cpp
  *
  * [902] Numbers At Most N Given Digit Set
