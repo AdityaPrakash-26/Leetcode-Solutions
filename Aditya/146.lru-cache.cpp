@@ -1,4 +1,11 @@
 /*
+Accepted
+22/22 cases passed (388 ms)
+Your runtime beats 86.84 % of cpp submissions
+Your memory usage beats 86.08 % of cpp submissions (165 MB)
+*/
+
+/*
  * @lc app=leetcode id=146 lang=cpp
  *
  * [146] LRU Cache
