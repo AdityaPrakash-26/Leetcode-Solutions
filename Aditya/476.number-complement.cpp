@@ -1,4 +1,11 @@
 /*
+Accepted
+149/149 cases passed (0 ms)
+Your runtime beats 100 % of cpp submissions
+Your memory usage beats 40 % of cpp submissions (6 MB)
+*
+
+/*
  * @lc app=leetcode id=476 lang=cpp
  *
  * [476] Number Complement
