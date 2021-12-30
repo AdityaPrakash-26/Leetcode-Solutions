@@ -1,4 +1,11 @@
 /*
+Accepted
+70/70 cases passed (4 ms)
+Your runtime beats 57.14 % of cpp submissions
+Your memory usage beats 34.45 % of cpp submissions (6 MB)
+*/
+
+/*
  * @lc app=leetcode id=1015 lang=cpp
  *
  * [1015] Smallest Integer Divisible by K
