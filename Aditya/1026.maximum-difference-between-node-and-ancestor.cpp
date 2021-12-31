@@ -1,4 +1,11 @@
 /*
+Accepted
+27/27 cases passed (6 ms)
+Your runtime beats 29.67 % of cpp submissions
+Your memory usage beats 94.65 % of cpp submissions (9.7 MB)
+*/
+
+/*
  * @lc app=leetcode id=1026 lang=cpp
  *
  * [1026] Maximum Difference Between Node and Ancestor
