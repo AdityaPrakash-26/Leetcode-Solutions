@@ -1,4 +1,11 @@
 /*
+Accepted
+58/58 cases passed (8 ms)
+Your runtime beats 95.97 % of cpp submissions
+Your memory usage beats 60.37 % of cpp submissions (10.2 MB)
+*/
+
+/*
  * @lc app=leetcode id=1094 lang=cpp
  *
  * [1094] Car Pooling
