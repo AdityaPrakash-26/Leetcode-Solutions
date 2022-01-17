@@ -22,7 +22,7 @@ public:
 class Solution {
 public:
     // DFS Based
-    map<Node*, Node*> hashMap;
+    unordered_map<Node*, Node*> hashMap;
     Node* cloneGraph(Node* node) {
         if(!node) return NULL;
         if(hashMap.find(node) == hashMap.end()){
