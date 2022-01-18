@@ -1,4 +1,11 @@
 /*
+Accepted
+124/124 cases passed (39 ms)
+Your runtime beats 7.74 % of cpp submissions
+Your memory usage beats 89.33 % of cpp submissions (20.2 MB)
+*/
+
+/*
  * @lc app=leetcode id=605 lang=cpp
  *
  * [605] Can Place Flowers
