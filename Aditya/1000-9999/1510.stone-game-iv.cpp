@@ -1,4 +1,11 @@
 /*
+Accepted
+72/72 cases passed (32 ms)
+Your runtime beats 77.52 % of cpp submissions
+Your memory usage beats 89.6 % of cpp submissions (6.2 MB)
+*/
+
+/*
  * @lc app=leetcode id=1510 lang=cpp
  *
  * [1510] Stone Game IV
