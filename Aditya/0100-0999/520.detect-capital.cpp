@@ -19,25 +19,25 @@ public:
             return false;
         }
 
-        bool isFirstWordCapital = false;
-        bool isAnyOtherWordCapital = false;
-        bool isAnyOtherWordSmall = false;
+        bool isFirstCharCapital = false;
+        bool isAnyOtherCharCapital = false;
+        bool isAnyOtherCharSmall = false;
 
         if(isupper(word[0])){
-            isFirstWordCapital = true;
+            isFirstCharCapital = true;
         }
 
         for(int i = 1; i < word.size(); i++){
             if(isupper(word[i])){
-                isAnyOtherWordCapital = true;
+                isAnyOtherCharCapital = true;
             }
             if(!isupper(word[i])){
-                isAnyOtherWordSmall = true;
+                isAnyOtherCharSmall = true;
             }
-            if(isAnyOtherWordCapital && !isFirstWordCapital){
+            if(isAnyOtherCharCapital && !isFirstCharCapital){
                 return false;
             }
-            if(isAnyOtherWordCapital && isAnyOtherWordSmall){
+            if(isAnyOtherCharCapital && isAnyOtherCharSmall){
                 return false;
             }
         }
