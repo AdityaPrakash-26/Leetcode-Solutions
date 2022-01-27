@@ -10,22 +10,20 @@ class Solution {
         // Code here
         vector<int> bfs;
         vector<int> vis(V, 0);
-        
-        
-                queue<int> que;
-                que.push(0);
-                vis[0] = 1;
-                while(!que.empty()){
-                    int node = que.front();
-                    que.pop();
-                    bfs.push_back(node);
-                    for(auto it : adj[node]){
-                        if(!vis[it]){
-                            que.push(it);
-                            vis[it] = 1;
-                        }
-                    }
+        queue<int> que;
+        que.push(0);
+        vis[0] = 1;
+        while(!que.empty()){
+            int node = que.front();
+            bfs.push_back(node);
+            que.pop();
+            for(auto itr : adj[node]){
+                if(!vis[itr]){
+                    que.push(itr);
+                    vis[itr] = 1;
                 }
+            }
+        }
         
         return bfs;
     }
