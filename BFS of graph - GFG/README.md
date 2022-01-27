@@ -1,5 +1,5 @@
 # BFS of graph
-## Easy 
+##  Easy 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a directed&nbsp;graph. The task is to do Breadth First Traversal of this graph starting from 0.<br>
 <strong>Note: </strong>One can move from node u&nbsp;to node v&nbsp;only if there's an edge from u&nbsp;to v and find the BFS traversal of the graph starting from the 0th vertex,</span><span style="font-size:18px">&nbsp;from left to right according to the graph. Also, you should only take nodes directly or indirectly connected from Node 0 in consideration.</span></p>
