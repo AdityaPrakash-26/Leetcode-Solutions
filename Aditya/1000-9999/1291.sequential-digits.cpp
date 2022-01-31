@@ -23,7 +23,7 @@ public:
             if(cur >= l && cur <= h) ans.push_back(cur);
             int num = cur % 10; // Ready for hoisting operation           
             int next = cur * 10 + (num + 1);
-            if(num < 9) q.push(next);// 1234->12345
+            if(num < 9) q.push(next); // 1234->12345
         }
         return ans;
     }
