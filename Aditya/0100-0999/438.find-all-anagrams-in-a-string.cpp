@@ -15,15 +15,24 @@ Your memory usage beats 74.23 % of cpp submissions (8.7 MB)
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
-        vector<int> goal(26), cur(26), res;
-        for(char c : p) goal[c - 'a']++;
-        for(int i = 0; i < s.size(); i++) {
-            cur[s[i] - 'a']++;
-            if(i >= p.size()) { // anagram not found, so remove out of range element
-                cur[s[i - p.size()] - 'a']--;
+        vector<int> res;
+        if (s.size() < p.size()) return res;
+        unordered_map<char, int> m;
+        for (char c : p) m[c]++;
+        int left = 0, right = 0, count = p.size();
+        while (right < s.size()) {
+            if (m.count(s[right])) {
+                if (m[s[right]] > 0) count--;
+                m[s[right]]--;
             }
-            if(cur == goal){ 
-                res.push_back(i - p.size() + 1);
+            right++;
+            if (count == 0) res.push_back(left);
+            if (right - left == p.size()) {
+                if (m.count(s[left])) {
+                    if (m[s[left]] >= 0) count++;
+                    m[s[left]]++;
+                }
+                left++;
             }
         }
         return res;
