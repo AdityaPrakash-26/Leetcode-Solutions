@@ -3,7 +3,7 @@ public:
  
     int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
      
-        map<int, int> hashMap;
+        unordered_map<int, int> hashMap;
         for(int idx1 : nums1){
             for(int idx2 : nums2){
                
