@@ -1,10 +1,4 @@
 Kashif Raza
-Leet Code username: mikeonbike
-[LeetCode Profile](https://leetcode.com/mikeonbike/)
-## Problems Solved (--> 12 August 2021)
-|Problem Solved|
-|--------------|
-|17 + 1|
-and counting . . . 
-
-Regards,
+- using Leetcode Extension LeetHub
+- if any concerns related to the structure of the solutions
+- #### Open an issue or email at: kashifraza08012001@gmail.com
