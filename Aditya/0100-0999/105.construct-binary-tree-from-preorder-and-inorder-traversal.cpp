@@ -1,4 +1,11 @@
 /*
+Accepted
+203/203 cases passed (12 ms)
+Your runtime beats 91.53 % of cpp submissions
+Your memory usage beats 55.25 % of cpp submissions (26.3 MB)
+*/
+
+/*
  * @lc app=leetcode id=105 lang=cpp
  *
  * [105] Construct Binary Tree from Preorder and Inorder Traversal
