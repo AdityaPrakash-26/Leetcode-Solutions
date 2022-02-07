@@ -1,4 +1,11 @@
 /*
+Accepted
+13/13 cases passed (152 ms)
+Your runtime beats 27.29 % of cpp submissions
+Your memory usage beats 18.83 % of cpp submissions (72.2 MB)
+*/
+
+/*
  * @lc app=leetcode id=912 lang=cpp
  *
  * [912] Sort an Array
