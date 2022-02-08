@@ -6,24 +6,22 @@
 */
 
 /*
- * @lc app=leetcode id=6 lang=cpp
+ *   @lc app=leetcode id=6 lang=cpp
  *
- * [6] ZigZag Conversion
+ *  [6] ZigZag Conversion
  */
-
-
 
 // @lc code=start
 #include <string>
 class Solution {
 public:
     string convert(string s, int numRows) {
-       /*
-          If number of Rows to show == 1
-          then the zig zag patterm would be just same
-          as the original string       
-       */   
-       if (numRows == 1) {
+        /*
+         * If number of Rows to show == 1
+         * then the zig zag patterm would be just same
+         * as the original string       
+        */   
+        if (numRows == 1) {
             return s;
         }
         const int jump = 2 * numRows - 2;
