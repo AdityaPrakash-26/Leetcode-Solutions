@@ -1,4 +1,11 @@
 /*
+Accepted
+37/37 cases passed (279 ms)
+Your runtime beats 55.72 % of cpp submissions
+Your memory usage beats 86.55 % of cpp submissions (79.7 MB)
+*/
+
+/*
  * @lc app=leetcode id=895 lang=cpp
  *
  * [895] Maximum Frequency Stack
