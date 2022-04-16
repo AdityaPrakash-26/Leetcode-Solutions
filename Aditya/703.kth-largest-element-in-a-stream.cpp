@@ -1,4 +1,11 @@
 /*
+Accepted
+10/10 cases passed (28 ms)
+Your runtime beats 97.86 % of cpp submissions
+Your memory usage beats 18.91 % of cpp submissions (19.9 MB)
+*/
+
+/*
  * @lc app=leetcode id=703 lang=cpp
  *
  * [703] Kth Largest Element in a Stream
