@@ -1,4 +1,11 @@
 /*
+Accepted
+115/115 cases passed (28 ms)
+Your runtime beats 92.5 % of cpp submissions
+Your memory usage beats 78.49 % of cpp submissions (19.6 MB)
+*/
+
+/*
  * @lc app=leetcode id=49 lang=cpp
  *
  * [49] Group Anagrams

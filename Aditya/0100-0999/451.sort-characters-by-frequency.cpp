@@ -25,7 +25,11 @@ public:
         for(auto& it:freq) {
             int n = it.second;
             char c = it.first;
-            bucket[n].append(n, c);
+            // the following line ensures that the character with a higher
+            // frequency will be at the larger index. Hence the array will be
+            // sorted in ascending order. We can then just iterate from the end
+            // to get the character with the largest freq.
+            bucket[n].append(n, c); //append c at n-th position
         }
         //form descending sorted string
         for(int i=s.size(); i>0; i--) {

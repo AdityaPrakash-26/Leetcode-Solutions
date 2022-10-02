@@ -1,8 +1,8 @@
 /*
 Accepted
-164/164 cases passed (12 ms)
-Your runtime beats 84.65 % of cpp submissions
-Your memory usage beats 80.73 % of cpp submissions (13.2 MB)
+164/164 cases passed (8 ms)
+Your runtime beats 97.89 % of cpp submissions
+Your memory usage beats 53.76 % of cpp submissions (13.3 MB)
 */
 
 /*
@@ -15,31 +15,58 @@ Your memory usage beats 80.73 % of cpp submissions (13.2 MB)
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        for(int i = 0; i<matrix.size(); i++){
-            for(int j = 0; j<matrix[0].size(); j++){
+        bool setRowZero = false;
+        bool setColZero = false;
+
+        int rows = matrix.size();
+        int cols = matrix[0].size();
+
+        for(int i = 0; i < rows; i++){
+            if(matrix[i][0] == 0){
+                setColZero = true;
+            }
+        }
+
+        for(int i = 0; i < cols; i++){
+            if(matrix[0][i] == 0){
+                setRowZero = true;
+            }
+        }
+
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < cols; j++){
                 if(matrix[i][j] == 0){
-                    //change the row to be 0(currently set to INT_MIN, so that 
-                    //it does not affect other calculations when it is changed to 0)
-                    for(int k = 0; k<matrix.size(); k++){   
-                        if(matrix[k][j] != 0){
-                            matrix[k][j] = INT_MIN+1;   //set to INT_MIN + 1 because of one weird test case :(
-                        }
-                    }
-                    //change column to be 0
-                    for(int k = 0; k<matrix[0].size(); k++){
-                        if(matrix[i][k] != 0){
-                            matrix[i][k] = INT_MIN+1;
-                        }
-                    }
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
-        //change INT_MINs to be 0
-        for(int i = 0; i<matrix.size(); i++){
-            for(int j = 0; j<matrix[0].size(); j++){
-                if(matrix[i][j] == INT_MIN+1){
+
+        for(int i = 1; i < rows; i++){
+            if(matrix[i][0] == 0){
+                for(int j = 1; j < cols; j++){
                     matrix[i][j] = 0;
                 }
+            }
+        }
+
+        for(int i = 1; i < cols; i++){
+            if(matrix[0][i] == 0){
+                for(int j = 1; j < rows; j++){
+                    matrix[j][i] = 0;
+                }
+            }
+        }
+
+        if(setColZero){
+            for(int i = 0; i < rows; i++){
+                matrix[i][0] = 0;
+            }
+        }
+
+        if(setRowZero){
+            for(int i = 0; i < cols; i++){
+                matrix[0][i] = 0;
             }
         }
     }

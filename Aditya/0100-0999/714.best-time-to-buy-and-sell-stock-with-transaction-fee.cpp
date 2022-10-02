@@ -1,4 +1,11 @@
 /*
+Accepted
+44/44 cases passed (88 ms)
+Your runtime beats 88.25 % of cpp submissions
+Your memory usage beats 85.62 % of cpp submissions (55 MB)
+*/
+
+/*
  * @lc app=leetcode id=714 lang=cpp
  *
  * [714] Best Time to Buy and Sell Stock with Transaction Fee

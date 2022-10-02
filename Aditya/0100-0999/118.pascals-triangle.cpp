@@ -2,7 +2,7 @@
 Accepted
 14/14 cases passed (0 ms)
 Your runtime beats 100 % of cpp submissions
-Your memory usage beats 33.97 % of cpp submissions (6.5 MB)
+Your memory usage beats 69.78 % of cpp submissions (6.5 MB)
 */
 
 /*
@@ -15,15 +15,19 @@ Your memory usage beats 33.97 % of cpp submissions (6.5 MB)
 class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
-        vector<vector<int>> ret;
-        for (int i = 0; i < numRows; i++) {
-            vector<int> row(i + 1, 1);  // ith row(0-indexed) has i+1 elements
-            for (int j = 1; j < i; j++) {
-                row[j] = ret[i - 1][j] + ret[i - 1][j - 1]; // 1st and last elements will be 1, rest will be sum of two elements from above row
+        vector<vector<int>> r(numRows);
+
+        for(int i = 0; i < numRows; i++){
+            r[i].resize(i+1);
+
+            r[i][0] = 1;
+            r[i][i] = 1;
+
+            for(int j = 1; j < i; j++){
+                r[i][j] = r[i-1][j-1] + r[i-1][j];
             }
-            ret.push_back(row);
         }
-        return ret;
+        return r;
     }
 };
 // @lc code=end

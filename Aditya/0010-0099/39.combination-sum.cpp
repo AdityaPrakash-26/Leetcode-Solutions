@@ -18,13 +18,14 @@ public:
     vector<int>current;
 
     void backtrack(vector<int>& candidates, int target, int index, int& sum){
-        //base case if sum is greater then target then return 
+        //base case if sum is greater than target then return 
         if(sum > target){
             return;
         }
         
         if(sum == target){
-            result.push_back(current); //id sum is equal to target then just add current to result
+            result.push_back(current); //if sum is equal to target then add current to result
+            return;
         }
 
         for(int i = index; i < candidates.size(); i++){
