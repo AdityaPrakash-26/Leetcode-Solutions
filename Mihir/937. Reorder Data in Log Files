@@ -1,0 +1,38 @@
+class Solution {
+public:
+    vector<string> reorderLogFiles(vector<string>& logs) {
+        vector<string> ans;
+        vector<string> digits;
+        vector<pair<string, string>> letters;
+        
+        for(int i = 0; i < logs.size(); i++) {
+            int j = 0;
+            while (logs[i][j] != ' ') {
+                j++;
+            }
+            
+            if (isalpha(logs[i][j + 1])) {
+                letters.push_back({logs[i].substr(0, j), logs[i].substr(j + 1)});
+            } else {
+                digits.push_back(logs[i]);
+            }
+        }
+        
+        sort(letters.begin(), letters.end(), [](auto& a, auto& b) {
+            if(a.second == b.second) {
+                return a.first < b.first;
+            }
+            return a.second < b.second;
+        });
+        
+        for(int i = 0; i < letters.size(); i++) {
+            ans.push_back(letters[i].first + " " + letters[i].second);
+        }
+        
+        for(int i = 0; i < digits.size(); i++) {
+            ans.push_back(digits[i]);
+        }
+        
+        return ans;
+    }
+};
